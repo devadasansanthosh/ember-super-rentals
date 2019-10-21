@@ -6,6 +6,25 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+
+    firebase: {
+      apiKey: "AIzaSyDw3Y04LgoKjro19RbAZMy69oPXlEL_n98",
+    authDomain: "ember-super-rentals-71a31.firebaseapp.com",
+    databaseURL: "https://ember-super-rentals-71a31.firebaseio.com",
+    projectId: "ember-super-rentals-71a31",
+    storageBucket: "ember-super-rentals-71a31.appspot.com",
+    messagingSenderId: "450175684950",
+    appId: "1:450175684950:web:8f7205f7a7d68036c586f7",
+    measurementId: "G-D07NE3F7ES"
+    },
+
+    // if using ember-cli-content-security-policy
+    contentSecurityPolicy: {
+      'script-src': "'self' 'unsafe-eval' apis.google.com",
+      'frame-src': "'self' https://*.firebaseapp.com",
+      'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
+    },
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -29,6 +48,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    
   }
 
   if (environment === 'test') {
